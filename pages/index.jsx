@@ -1,6 +1,7 @@
 import Title from '../components/Title'
 import Ingress from '../components/Ingress'
 import Head from 'next/head'
+import { ConnectKitButton } from "connectkit";
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
       <meta name="theme-color" content="#1e2024" media="(prefers-color-scheme: dark)" />
     </Head>
   
+
+    <ConnectKitButton />
     <Title>Hello?</Title>
     <Ingress>Yo!</Ingress>
     <p>What?!</p>
