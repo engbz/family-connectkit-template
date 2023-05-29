@@ -1,5 +1,6 @@
 import Title from '../components/Title'
 import Ingress from '../components/Ingress'
+import MyComponent from '../components/MyComponent'
 import Head from 'next/head'
 import { ConnectKitButton } from "connectkit";
 
@@ -15,9 +16,13 @@ export default function Home() {
   
 
     <ConnectKitButton />
+    {/* <ConnectKitButton.Custom /> */}
     <Title>Hello?</Title>
     <Ingress>Yo!</Ingress>
     <p>What?!</p>
+
+    {/* <MyComponent/> */}
+
   </>
   )
 }
