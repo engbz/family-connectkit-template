@@ -7,8 +7,6 @@ import { ConnectKitProvider, getDefaultConfig } from "connectkit";
 const config = createConfig(
   getDefaultConfig({
     appName: "ConnectKit Next.js demo",
-    // alchemyId: process.env.NEXT_PUBLIC_ALCHEMY_ID,
-    // walletConnectProjectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID,
     alchemyId: process.env.ALCHEMY_ID, // or infuraId
     walletConnectProjectId: process.env.WALLETCONNECT_PROJECT_ID,
   })
