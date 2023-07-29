@@ -1,14 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: var(--color-background);
-    color: var(--color-text)
-  }
-
   :root {
 	--color-background: #fafafa;
 	--color-text: #1e2024;
@@ -21,11 +13,21 @@ export const GlobalStyle = createGlobalStyle`
 	}
 }
 
-`
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--color-background);
+    color: var(--color-text)
+  }
 
-export const theme = {
-  colors: {
-    primary: 'blue',
-    secondary: 'green',
-  },
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 48px 24px;
+  height: 100vh;
 }
+`

@@ -1,5 +1,4 @@
-import { ThemeProvider } from 'styled-components'
-import { GlobalStyle, theme } from '../components/GlobalStyle'
+import { GlobalStyle } from '../components/GlobalStyle'
 
 import { WagmiConfig, createConfig } from "wagmi";
 import { ConnectKitProvider, getDefaultConfig } from "connectkit";
@@ -18,9 +17,7 @@ export default function App({ Component, pageProps }) {
     <WagmiConfig config={config}>
       <ConnectKitProvider>
         <GlobalStyle/>
-        <ThemeProvider theme={theme}>
         <Component {...pageProps} />
-        </ThemeProvider>
         </ConnectKitProvider>
     </WagmiConfig>
     </>
